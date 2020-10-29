@@ -3,23 +3,24 @@
 - https://hub.docker.com/r/mysql/mysql-server/
 - https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/docker-mysql-getting-started.html
 
-Baixei a imagem.
+Downloading a MySQL Server Docker Image.
 
     docker pull mysql/mysql-server
 
-
-Executando a instância.
+Starting a MySQL Server Instance.
 
      docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=1234 -d mysql/mysql-server:latest
 
-Acessando o shell.
+Connecting to MySQL Server from within the Container.
 
     docker exec -it my-mysql bash
-
     bash-4.2#
     bash-4.2#  mysql -u root -p
 
-Resultado:
+    // or
+    docker exec -it my-mysql mysql -u root -p    
+
+Result:
 
     Enter password:
 
