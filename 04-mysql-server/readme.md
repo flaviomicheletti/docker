@@ -1,7 +1,7 @@
 # Docker e Mysql Server
 
-https://hub.docker.com/r/mysql/mysql-server/
-
+- https://hub.docker.com/r/mysql/mysql-server/
+- https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/docker-mysql-getting-started.html
 
 Baixei a imagem.
 
@@ -14,11 +14,13 @@ Executando a instância.
 
 Acessando o shell.
 
-    docker exec -it container-teste-mysql bash
+    docker exec -it my-mysql bash
 
-Obtive:
+    bash-4.2#
+    bash-4.2#  mysql -u root -p
 
-    bash-4.2# mysql -uroot -p
+Resultado:
+
     Enter password:
 
     Welcome to the MySQL monitor.  Commands end with ; or \g.
