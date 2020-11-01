@@ -16,29 +16,38 @@ Your first container:
 
 ### Cheat Sheet Containers
 
-    // list all Docker container
+List all Docker container
+
     docker container ls -a
 
-    // list of all the containers only by their numeric id´s
+List of all the containers only by their numeric id´s
+
     docker container ls –aq 
 
-    // stop a specifc container
+Stop a specifc container
+
     docker container stop [container_id]
 
-    // stop all containers
+Stop all containers
+
     docker container stop $(docker container ls –aq)
 
-    // remove a stopped container
+Remove a stopped container
+
     docker container rm [container_id]
 
-    // remove all stopped containers
+Remove all stopped containers
+
     docker container rm $(docker container ls –aq)
 
-    // remove all Docker Containers
-    // To wipe Docker clean and start from scratch, enter the command:
+Remove all Docker Containers.
+
+To wipe Docker clean and start from scratch, enter the command:
+
     docker container stop $(docker container ls –aq) && docker system prune –af ––volumes
 
-    // remove all resources
+Remove all resources
+
     docker container prune
 
 ### Cheat Sheet Images
@@ -57,24 +66,30 @@ Remove all resources
 
 ### Cheat Sheet Volumes
 
-    // a list of all available Docker volumes
+A list of all available Docker volumes
+
     docker volume ls
 
-    // remove a volume
+Remove a volume
+
     docker volume rm [VolumeName]
 
-    // remove all resources
+Remove all resources
+
     docker volume  prune
 
 ### Cheat Sheet Network
 
-    // a list of all existing Docker networks
+A list of all existing Docker networks
+
     docker network ls
 
-    // remove a specific network
+Remove a specific network
+
     docker network rm [networkID]
 
-    // remove all resources
+Remove all resources
+
     docker network prune
 
 ### Remove All Unused Docker Objects
