@@ -34,25 +34,6 @@ Execute in terminal:
 
     docker build --tag node-docker .
 
-You receive...
-
-    Sending build context to Docker daemon  12.
-    Step 1/7 : FROM node:12.18.
-    12.18.1: Pulling from library/node
-    81fc19181915: Pull complete
-    ee49ee6a23d1: Pull complete
-
-    #
-    # step by step
-    #
-
-    Step 7/7 : CMD [ "node", "server.js" ]
-    ---> Running in 6f0c36e4065b
-    Removing intermediate container 6f0c36e4065b
-    ---> 079c987ad441
-    Successfully built 079c987ad441
-    Successfully tagged node-docker:latest
-
 
 ## Run your image as a container
 
@@ -78,3 +59,4 @@ Start the container and expose port 8000 to port 8000 on the host.
 
     docker run --publish 8000:8000 node-docker
 
+![result](https://user-images.githubusercontent.com/1257048/97806889-b11cc400-1c3c-11eb-8edd-a9095cc62e44.png)
