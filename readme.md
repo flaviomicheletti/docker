@@ -43,13 +43,16 @@ Your first container:
 
 ### Cheat Sheet Images
 
-    // to remove a Docker image
+To remove a Docker image
+
     docker image ls
 
-    // remove the unwanted image(s)
+Remove the unwanted image(s)
+
     docker image rm [image-id1] [image_-d2]
 
-    // remove all resources
+Remove all resources
+
     docker image prune
 
 ### Cheat Sheet Volumes
