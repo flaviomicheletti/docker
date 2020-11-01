@@ -60,6 +60,11 @@ Remove the unwanted image(s)
 
     docker image rm [image-id1] [image_-d2]
 
+Rename image
+
+    docker image tag [image-id] [new-name]:[new-tag] 
+    // obs: the new-tag is usually [latest]
+
 Remove all resources
 
     docker image prune
