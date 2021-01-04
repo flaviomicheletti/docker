@@ -33,6 +33,10 @@ Stop all containers
 
     docker container stop $(docker container ls –aq)
 
+    or
+
+    docker stop $(docker ps -a -q)
+
 Remove a stopped container
 
     docker container rm [container_id]
