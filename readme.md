@@ -12,6 +12,7 @@ Your first container:
 
 - https://hub.docker.com/_/php/
 - https://hub.docker.com/r/phpmyadmin/phpmyadmin/
+- https://docs.phpmyadmin.net/pt_BR/latest/setup.html
 
 
 ### Cheat Sheet Containers

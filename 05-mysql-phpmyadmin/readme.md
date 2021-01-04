@@ -9,7 +9,7 @@ Podemos subir nossa database com o comando:
 
     docker-compose up db
 
-Você já pode acessar o banco através de um cli qualuer.
+Você já pode acessar o banco através de um cli qualquer.
 
 ![workbench-connection](https://user-images.githubusercontent.com/1257048/97791900-517bd580-1bb6-11eb-900f-e73a07356894.png)
 
@@ -20,12 +20,15 @@ Abra o Wrokbench (por exemplo) crie uma conexão conforme acima e teste.
 
 ### Parte 2
 
-Abra um novo terminal (não feche o anterior )
+Abra um novo terminal (não feche o anterior).
     
     docker-compose up app
     
 http://localhost:8080/
 
+Para logar-se use:
 
+    root
+    1234
 
-
+E deixe o campo `server` vazio.
