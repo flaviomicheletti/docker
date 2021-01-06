@@ -6,3 +6,4 @@ https://dev.to/truthseekers/setup-a-basic-local-php-development-environment-in-d
     docker build -t 09-my-php .
     docker run -it --rm --name my-running-app 09-my-php
 
+See too https://hub.docker.com/_/php/
