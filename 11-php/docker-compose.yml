@@ -2,6 +2,7 @@ version: '3.1'
 
 services:
   php:
+    container_name: php
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,6 +12,7 @@ services:
       - ./src:/var/www/html/
 
   db:
+    container_name: db
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
@@ -18,6 +20,7 @@ services:
       MYSQL_ROOT_PASSWORD: example
 
   adminer:
+    container_name: adminer
     image: adminer
     restart: always
     ports:

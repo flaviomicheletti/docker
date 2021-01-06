@@ -14,4 +14,4 @@ https://dev.to/truthseekers/setup-a-basic-local-php-development-environment-in-d
     // 
     http://localhost:3003/?server=db&username=root
 
-    use a senha example
+    use a senha `example`
