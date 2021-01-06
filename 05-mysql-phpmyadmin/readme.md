@@ -24,7 +24,7 @@ Abra um novo terminal (não feche o anterior).
     
     docker-compose up app
     
-http://localhost:8080/
+http://localhost:1234/
 
 Para logar-se use:
 
@@ -32,3 +32,9 @@ Para logar-se use:
     1234
 
 E deixe o campo `server` vazio.
+
+
+### See too
+
+- https://hub.docker.com/r/phpmyadmin/phpmyadmin/
+- https://docs.phpmyadmin.net/pt_BR/latest/setup.html

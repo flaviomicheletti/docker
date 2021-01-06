@@ -8,11 +8,6 @@ Your first container:
 
     docker run -d -p 80:80 docker/getting-started
 
-### Next
-
-- https://hub.docker.com/r/phpmyadmin/phpmyadmin/
-- https://docs.phpmyadmin.net/pt_BR/latest/setup.html
-
 
 ### Cheat Sheet Containers
 
