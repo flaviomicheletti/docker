@@ -1,4 +1,4 @@
-# Docker e Mysql Server
+# mysql/mysql-server
 
 - https://hub.docker.com/r/mysql/mysql-server/
 - https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/docker-mysql-getting-started.html
@@ -13,12 +13,11 @@ Starting a MySQL Server Instance.
 
 Connecting to MySQL Server from within the Container.
 
-    docker exec -it my-mysql bash
-    bash-4.2#
+    shell>     docker exec -it my-mysql bash
     bash-4.2#  mysql -u root -p
 
     // or
-    docker exec -it my-mysql mysql -u root -p    
+    docker exec -it my-mysql mysql -u root -p
 
 Result:
 
@@ -37,3 +36,41 @@ Result:
     Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
     mysql>
+
+
+### Conectando
+
+    mysql>
+
+    CREATE USER 'developer'@'localhost' IDENTIFIED BY '1234';
+    CREATE USER 'developer'@'%' IDENTIFIED BY '1234';
+
+    GRANT ALL ON *.* TO 'developer'@'localhost';
+    GRANT ALL ON *.* TO 'developer'@'%';
+
+    FLUSH PRIVILEGES;
+
+    mysql> SELECT host,user FROM user;
+    +-----------+------------------+
+    | host      | user             |
+    +-----------+------------------+
+    | %         | developer        |
+    | localhost | developer        |
+    | localhost | healthchecker    |
+    | localhost | mysql.infoschema |
+    | localhost | mysql.session    |
+    | localhost | mysql.sys        |
+    | localhost | root             |
+    +-----------+------------------+
+
+Workbeanch
+
+    Hostname: 127.0.0.1
+    Port:     3306
+    Username: developer
+
+See too:
+
++ https://stackoverflow.com/questions/5755819/lost-connection-to-mysql-server-at-reading-initial-communication-packet-syste
++ https://serverfault.com/questions/793058/can-not-access-mysql-docker
+
