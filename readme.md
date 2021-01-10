@@ -17,7 +17,10 @@ List all Docker container
 
 List of all the containers only by their numeric id´s
 
-    docker container ls –aq 
+    docker container ls -aq
+
+https://docs.docker.com/engine/reference/commandline/container_ls/
+
 
 Stop a specifc container
 
@@ -26,10 +29,12 @@ Stop a specifc container
 Stop all containers
 
     docker container stop $(docker container ls –aq)
-
-    or
-
+    // or
     docker stop $(docker ps -a -q)
+
+Provides information on the data directory volume
+
+    docker inspect [container_id]
 
 Remove a stopped container
 
@@ -43,11 +48,13 @@ Remove all Docker Containers.
 
 To wipe Docker clean and start from scratch, enter the command:
 
-    docker container stop $(docker container ls –aq) && docker system prune –af ––volumes
+    docker container stop $(docker container ls -aq) && docker system prune –af ––volumes
 
 Remove all resources
 
     docker container prune
+
+https://docs.docker.com/engine/reference/commandline/system_prune/
 
 ### Cheat Sheet Images
 
@@ -80,7 +87,7 @@ Remove a volume
 
 Remove all resources
 
-    docker volume  prune
+    docker volume prune
 
 ### Cheat Sheet Network
 
