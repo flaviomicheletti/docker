@@ -42,7 +42,7 @@ Remove a stopped container
 
 Remove all stopped containers
 
-    docker container rm $(docker container ls –aq)
+    docker container rm $(docker container ls -qa)
 
 Remove all Docker Containers.
 
@@ -72,6 +72,8 @@ Rename image
     // obs: the new-tag is usually [latest]
 
 Remove all resources
+
+    docker image rm $(docker image ls -aq)
 
     docker image prune
 
