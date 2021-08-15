@@ -40,5 +40,7 @@ This will work even if your Dockerfile does not mention anything about `EXPOSE 5
 
 ### See too
 
+- https://docs.docker.com/engine/reference/builder/#expose
 - https://docs.docker.com/config/containers/container-networking/
-
+- https://www.baeldung.com/ops/docker/expose-vs-publish
+- https://vsupalov.com/docker-expose-ports/

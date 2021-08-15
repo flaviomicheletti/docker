@@ -13,7 +13,9 @@ Starting a MySQL Server Instance.
 
 Connecting to MySQL Server from within the Container.
 
-    shell>     docker exec -it my-mysql bash
+    docker exec -it my-mysql bash
+
+    shell>     
     bash-4.2#  mysql -u root -p
 
     // or
