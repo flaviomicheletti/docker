@@ -3,9 +3,10 @@
 
 Quando `WORKDIR /usr/src/app`
 
-    docker create -ti --name dummy pmais-agenda.ui bash
-    docker cp dummy:/usr/src/app/yarn.lock ./yarn.lock
-    docker rm -f dummy
+    docker create -ti --name dummy2 if2030-in-ui bash
+    docker cp dummy2:/usr/src/app/yarn.lock ./yarn.lock
+    docker cp dummy2:/usr/src/app/package-lock.json ./package-lock.json
+    docker rm -f dummy2
 
 
 
