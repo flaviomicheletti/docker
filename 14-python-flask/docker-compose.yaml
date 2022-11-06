@@ -30,11 +30,14 @@ services:
       - 8082:80
     networks:
       - frontend-network
+
 volumes:
   db-data:
+
 secrets:
   db-password:
     file: db/password.txt
+    
 networks:
   backend-network:
   frontend-network:
