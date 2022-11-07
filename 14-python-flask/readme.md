@@ -2,6 +2,11 @@
 
     docker-compose up
 
-http://localhost:8082
+    http://localhost:8082
 
-https://www.docker.com/blog/tag/python-env-series/
+
+- https://www.docker.com/blog/tag/python-env-series/
+
+## See also
+
+https://hub.docker.com/_/python
