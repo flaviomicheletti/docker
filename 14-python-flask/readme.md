@@ -10,3 +10,5 @@
 ## See also
 
 https://hub.docker.com/_/python
+
+https://pythonspeed.com/articles/base-image-python-docker-images/

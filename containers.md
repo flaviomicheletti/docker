@@ -2,6 +2,7 @@
 
 List all Docker container
 
+    docker ps
     docker container ls -a
 
 List of all the containers only by their numeric id´s
