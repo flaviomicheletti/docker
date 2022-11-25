@@ -21,10 +21,20 @@
           "codeName" : "Unauthorized"
   }
 
-
-
 ##
 
 docker compose and mongodb
 
 https://www.bmc.com/blogs/mongodb-docker-container/
+
+use admin
+db.createUser({
+  user: 'foo',
+  password: 'lish',
+  roles: [
+    {
+      role: 'readWrite',
+      db: 'admin',
+    },
+  ],
+});
