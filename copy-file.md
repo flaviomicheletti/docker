@@ -1,7 +1,7 @@
 # Copy File
 
 
-Quando `WORKDIR /usr/src/app`
+When `WORKDIR /usr/src/app`
 
     docker create -ti --name dummy2 if2030-in-ui bash
     docker cp dummy2:/usr/src/app/yarn.lock ./yarn.lock
@@ -10,7 +10,7 @@ Quando `WORKDIR /usr/src/app`
 
 
 
-Quando `WORKDIR /app`
+When `WORKDIR /app`
 
     docker create -ti --name dummy bquestoes-in-ui bash
     docker cp dummy:/app/package-lock.json ./package-lock.json

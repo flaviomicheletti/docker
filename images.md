@@ -1,4 +1,4 @@
-### Cheat Sheet Images
+# Cheat Sheet Images
 
 Building a Dockerfile from a different folder
 

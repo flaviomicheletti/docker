@@ -3,7 +3,7 @@
 About parameter `--publish`
 
 
-### Example 1
+## Example 1
 
     docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0
 
@@ -12,14 +12,14 @@ About parameter `--publish`
 Visit your application in a browser at localhost:8000
 
 
-### Example 2
+## Example 2
 
 Map TCP port 80 in the container to port 8080 on the Docker host.
 
     -p 8080:80
 
 
-### Example 3
+## Example 3
 
 If I run a very simple application with the command... 
 
@@ -28,7 +28,7 @@ If I run a very simple application with the command...
 ...whatever service running on my container on 3000 will be available on my host on 8080
 
 
-### Example 4
+## Example 4
 
 You can use -p options to publish single ports. For example, if you want the container port 5000 
 to be available on your localhost 8000, you’d need to specify
@@ -38,7 +38,7 @@ to be available on your localhost 8000, you’d need to specify
 This will work even if your Dockerfile does not mention anything about `EXPOSE 5000`.
 
 
-### See too
+## See too
 
 - https://docs.docker.com/engine/reference/builder/#expose
 - https://docs.docker.com/config/containers/container-networking/

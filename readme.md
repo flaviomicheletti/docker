@@ -26,8 +26,8 @@ Your third container:
 - https://www.portainer.io/install
 - https://docs.portainer.io/v/ce-2.9/start/install/server/docker/linux
 
-admin
-e6nmgeUH5KMzk6Y
+  admin
+  e6nmgeUH5KMzk6Y
 
 
 ### See too
