@@ -1,5 +1,8 @@
 # Monogdb + Docker compose
 
+  // optional
+  docker pull mongo:latest
+
   docker-compose up -d
   docker exec -it mongodb bash
 

@@ -6,7 +6,7 @@ Building a Dockerfile from a different folder
     docker build . -t my-web-app -f subfolder/Dockerfile
     docker build -f other-Dockerfile .
 
-To remove a Docker image
+To list.
 
     docker image ls
 
