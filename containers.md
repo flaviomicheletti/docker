@@ -18,9 +18,9 @@ Stop a specifc container
 
 Stop all containers
 
-    docker container stop $(docker container ls –aq)
-    // or
     docker stop $(docker ps -a -q)
+    // or
+    docker container stop $(docker container ls –aq)
 
 Provides information on the data directory volume
 
