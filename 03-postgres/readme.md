@@ -9,3 +9,9 @@ Build an image from the Dockerfile and assign it a name.
 Run the PostgreSQL server container (in the foreground):
 
     docker run --rm -P --name pg_test eg_postgresql
+
+
+## See also
+
+- https://hub.docker.com/_/postgres
+- https://docs.docker.com/samples/postgres/
