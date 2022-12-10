@@ -9,7 +9,7 @@
   docker-compose down 
 
 
-# Monogdb + Docker
+## Monogdb + Docker
 
     docker run -it -p 28000:27017 --name mongoContainer mongo:latest
 
@@ -29,3 +29,13 @@
   db.createCollection("fruits")
   db.fruits.insertMany([ {name: "apple", origin: "usa", price: 5}, {name: "orange", origin: "italy", price: 3}, {name: "mango", origin: "malaysia", price: 3} ])
   db.fruits.find().pretty()  
+
+
+## Conecting with Compass
+
+    mongodb://admin:password@189.29.146.76:27017
+
+
+## See also
+
+- https://hub.docker.com/_/mongo
