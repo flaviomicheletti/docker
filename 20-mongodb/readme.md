@@ -11,8 +11,8 @@
 
 ## Monogdb + Docker
 
-    docker run -it -p 28000:27017 --name mongoContainer mongo:latest
-
+    docker run -it -p 28000:27017 --name mongodb mongo:latest
+    // mongodb://localhost:28000/?readPreference=primary&ssl=false&directConnection=true
 
 ## Acessando o container via terminal
 
