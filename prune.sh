@@ -2,7 +2,7 @@ docker stop $(docker ps -a -q)
 docker container rm $(docker container ls -qa)
 docker container prune
 
-docker image rm $(docker image ls -aq)
+docker image rm $(docker image ls -aq) --force
 docker image prune
 
 docker volume prune
