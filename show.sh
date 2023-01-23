@@ -1,10 +1,10 @@
 clear
 
-docker image ls
+docker container ls -a
 echo
 echo
 
-docker container ls -a
+docker image ls
 echo
 echo
 
