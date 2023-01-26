@@ -14,9 +14,9 @@
     docker run -it -p 28000:27017 --name mongodb mongo:latest
     // mongodb://localhost:28000/?readPreference=primary&ssl=false&directConnection=true
 
-## Acessando o container via terminal
+## Accessing the container via terminal
 
-  //Version 5
+  // Version 5
   mongosh -u "admin" -p "password" --authenticationDatabase "admin"
 
   // Version 4
