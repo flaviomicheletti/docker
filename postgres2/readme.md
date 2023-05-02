@@ -8,7 +8,7 @@ Read the explanation here [Creating and filling a Postgres DB with Docker compos
 
 The ER Diagram of DB is this:
 
-<img width="809" alt="ER_Diagram" src="https://user-images.githubusercontent.com/2475570/106355076-d4025700-62c3-11eb-90e6-41c3ee47c06b.png">
+![](https://user-images.githubusercontent.com/2475570/106355076-d4025700-62c3-11eb-90e6-41c3ee47c06b.png)
 
 ## DB Variables
 
@@ -41,7 +41,5 @@ If want change this params in `docker-compose.yaml`
 
 ## Run
 
-```sh
-$ docker-compose up
-```
+    docker-compose up
 
