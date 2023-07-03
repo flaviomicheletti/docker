@@ -11,7 +11,7 @@
     -v ./data:/var/lib/postgresql/data \
     postgres
 
-What about the last world in the lat line `postgres`? 
+What about the last world in the last line `postgres`? 
 
 The last word "postgres" in the command refers to the Docker image that the 
 container will be based on. 
