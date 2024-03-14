@@ -5,7 +5,7 @@
     docker run --name my-postgres \
     -e POSTGRES_USER=john \
     -e POSTGRES_PASSWORD=1234 \
-    -e POSTGRES_DB=OnlineStoreDB \
+    -e POSTGRES_DB=yourDatabase \
     -p 5438:5432 \
     --network dev \
     -v ./data:/var/lib/postgresql/data \
@@ -29,14 +29,14 @@ be accessed and managed using the specified parameters and configurations.
     --network dev \
     -v ./sample1.sql:/sql/sample1.sql \
     postgres \
-    sh -c 'psql -h my-postgres -U john -d OnlineStoreDB -f /sql/sample1.sql'
+    sh -c 'psql -h my-postgres -U john -d yourDatabase -f /sql/sample1.sql'
 
 ## Accessing through psql
 
     docker run -it --rm \
     --network dev \
     postgres \
-    psql -h my-postgres -U john -d OnlineStoreDB
+    psql -h my-postgres -U john -d yourDatabase
 
 ## Previous Notes
 

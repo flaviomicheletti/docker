@@ -1,3 +1,7 @@
+--
+-- OnlineStoreDB
+--
+
 -- This table contains customer information.
 CREATE TABLE customers (
   id SERIAL PRIMARY KEY,
