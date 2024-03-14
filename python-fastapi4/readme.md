@@ -4,16 +4,13 @@
 
 
     // Build
-    docker build -t python-fast-api .
+    docker build -t fastapi-application .
 
     // Run
-    docker run -p 8001:8000 python-fast-api
+    docker run -p 8001:8000 fastapi-application
 
     // or
     uvicorn app.main:app --reload
-
-   // or
-   ./run.sh
 
     // Access
     http://localhost:8001/
